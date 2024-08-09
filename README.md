@@ -10,8 +10,8 @@ First we need to run the script "rename-server.sh" to rename the linux server an
 3. Make the script executable:
     chmod +x rename-server.sh
 4. Run the script with the new hostname as an argument:
-    sudo ./rename-server.sh <new_hostname>
-    Replace <new_hostname> with the desired hostname for your server.
+    sudo ./rename-server.sh <new_fqdn>
+    Replace <new_fqdn> with the desired hostname and domain name for your server.
 5. Restart the server with "reboot" command to apply the new hostname. 
 ```
 
@@ -22,6 +22,10 @@ Then we have to run the script "install-microK8s.sh" to install snapd, microK8s 
     chmod +x install-microK8s.sh
 3. Run the script:
     sudo ./install-microK8s.sh
+4. Restart the server with "reboot" command.
+5. Run the below commands to confirm that Microk8s is working as expected.
+    microk8s status
+    microk8s kubectl get nodes
 ```
 ===========================================================================
 

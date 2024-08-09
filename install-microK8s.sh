@@ -37,7 +37,9 @@
 
 # Apply the changes.
     newgrp microk8s
-    microk8s status
+    microk8s enable hostpath-storage
+    
+echo "Please reboot the system to apply the changes.
 
 # Restart Microk8s services
     echo 'restarting Microk8s services'
