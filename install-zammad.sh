@@ -100,6 +100,6 @@ es_password=${2:-P@ssword1!}
   sed -i "s/server_name example\.com;/server_name $hostfqdn;/g" /etc/nginx/sites-available/zammad.conf
   sed -i '/ssl_certificate .*/c\\  ssl_certificate /certs/certificate.pem;' /etc/nginx/sites-available/zammad.conf
   sed -i '/ssl_certificate_key .*/c\\  ssl_certificate_key /certs/key.pem;' /etc/nginx/sites-available/zammad.conf
-  sed -i '/^ssl_dhparam /s/^/#/'  /etc/nginx/sites-available/zammad.conf
-  sed -i '/^ssl_trusted_certificate /s/^/#/'  /etc/nginx/sites-available/zammad.conf
+  sed -i '/ssl_dhparam /s/^/#/'  /etc/nginx/sites-available/zammad.conf
+  sed -i '/ssl_trusted_certificate /s/^/#/'  /etc/nginx/sites-available/zammad.conf
   systemctl reload nginx
