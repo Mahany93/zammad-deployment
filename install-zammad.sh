@@ -6,7 +6,7 @@ es_password=${2:-P@ssword1!}
 # Update /etc/hostname
   echo "Installing Zammad Dependencies".
   apt install -y libimlib2
-  apt install -y curl apt-transport-https gnupg
+  apt install -y curl apt-transport-https gnupg 
 
 
 # Install Elasticsearch
