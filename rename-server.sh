@@ -12,7 +12,7 @@ if [ -z "$1" ]; then
   exit 1
 fi
 
-NEW_HOSTNAME=$1
+NEW_HOSTNAME=${1:-zammad01.home.local}
 
 hostnamectl set-hostname "$NEW_HOSTNAME"
 

@@ -17,3 +17,7 @@ http.max_content_length: 400mb
 #
 # Available in version 6.6+ only.
 indices.query.bool.max_clause_count: 2000
+
+network.host: 127.0.0.1
+path.logs: /var/log/elasticsearch
+path.data: /var/lib/elasticsearch
