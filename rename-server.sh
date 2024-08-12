@@ -6,11 +6,11 @@ if [ "$EUID" -ne 0 ]; then
   exit 1
 fi
 
-# Check if a new hostname is provided as an argument
-if [ -z "$1" ]; then
-  echo "Usage: $0 <new_hostname>"
-  exit 1
-fi
+# # Check if a new hostname is provided as an argument
+# if [ -z "$1" ]; then
+#   echo "Usage: $0 <new_hostname>"
+#   exit 1
+# fi
 
 NEW_HOSTNAME=${1:-zammad01.home.local}
 
